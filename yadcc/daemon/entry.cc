@@ -173,7 +173,7 @@ int DaemonStart(int argc, char** argv) {
   unsetenv("SOURCE_DATE_EPOCH");
 
   // Drop privileges if we're running as privileged.
-  DropPrivileges();
+  //DropPrivileges();
 
   // Usually we don't want to generate core dump on user's machine.
   if (!FLAGS_allow_core_dump) {
